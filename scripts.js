@@ -1,46 +1,58 @@
 const button = document.getElementById("convert-button")
 const select = document.getElementById("currency-select")
-const dolar = 5.2
-const euro = 5.9
-const bitcoin = 140997.13
+//const dolar = 5.2
+//const euro = 5.9
+//const bitcoin = 140997.13
 
-const convertValues = () => {
-    const inputReais = document.getElementById("input-real").value //Pegando o valor do input
+function formatNumber(input) {
+    const cleanInput = input.replace(/[^\d,]/g, '');
+    const internationalFormat = cleanInput.replace(',', '.');
+    const number = parseFloat(internationalFormat);
+    return number;
+  }
 
-    //colocando o valor digitado no texto onde estava 10.000,00
+const convertValues = async () => {
+    const inputReais = document.getElementById("input-real").value 
     const realValueText = document.getElementById("real-value-text")
-    //realValueText.innerHTML = inputReais ((< forma sem formatação da moeda))
 
-    //Abaixo forma utilizando formatação do JS para moeda Real
+    const formattedValue = formatNumber(inputReais);
+    console.log(formattedValue
+        )
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
+    const bitcoin = data.BTCBRL.high
+    console.log(data)
+
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL",
-    }).format(inputReais)
+    }).format(formattedValue)
 
-    //colocando o valor convertido em dolar no lugar dos 2000,00
     const paragraphValueText = document.getElementById("paragraph-value-text")
-    //paragraphValueText.innerHTML = inputReais / dolar (< forma sem formatação da moeda)
+
 
     if (select.value === "US$ Dólar Americano") {
-        //Abaixo forma utilizando formatação do JS para moeda Dolar
+
         paragraphValueText.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD",
-        }).format(inputReais / dolar)
+        }).format(formattedValue / dolar)
     }
 
     if (select.value === "€ Euro") {
         paragraphValueText.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR",
-        }).format(inputReais / euro)
+        }).format(formattedValue / euro)
     }
 
     if(select.value === "₿ Bitcoin"){
         paragraphValueText.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "BTC",
-        }).format(inputReais / bitcoin)
+        }).format(formattedValue / bitcoin)
     } 
 }
 

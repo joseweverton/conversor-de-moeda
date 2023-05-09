@@ -21,7 +21,7 @@ body{
     
 }
 header{
-    background-color: #1B83E2;
+    background-image: linear-gradient(to bottom, #404040, #757575);
     height: 66px;
 }
 h1 {
@@ -71,7 +71,7 @@ input{
 }
 
 button{
-    background: #1B83E2;
+    background: radial-gradient(circle, #565555, #222222);
     border-radius: 25px;
     height: 48px;
     cursor: pointer;
@@ -92,7 +92,7 @@ button:active{
 }
 
 section{
-    border: 1px solid #1B83E2;
+    border: 1px solid #565555;
     border-radius: 4px; 
 }
 
@@ -107,7 +107,7 @@ section{
     color: #777777;
 }
 .paragraph-value{
-    color: #1B83E2;
+    color: #0f69bd;
     font-weight: bold;
     font-size: 20px;
 }
