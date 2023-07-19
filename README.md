@@ -8,6 +8,8 @@ As opções são de:
 * Real x Euro,
 * Real x BitCoin.
 
+Acesse o projeto: https://joseweverton.github.io/convert-money/
+
 Para essa aplicação não utilizei framework para o front-end, somente HTML, CSS e JavaScript.
 
 Foi utilizado o fetch, função nativa do JavaScript para consumir a API do AwesomeAPI e retornar um objeto json com a cotação (na alta - high) da moeda desejada atualizando dinamicamente a página conforme cotação atual retornada pela API.
@@ -18,4 +20,4 @@ Incrementei a função de tratamento do valor informado pelo usuário para ameni
 
 A aplicação tem como finalidade aplicar conceitos acadêmico visando a prática em cenários cotidiano do dia a dia.
 
-Link de acesso a aplicação: https://joseweverton.github.io/convert-money/
+
