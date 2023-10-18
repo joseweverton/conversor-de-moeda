@@ -1,23 +1,41 @@
-# conversor-de-moeda | Convert Money.
+# 💱 Conversor de Moeda | Convert Money
 
-Essa aplicação converte o valor informado pelo usuário em três opções de moedas que pode ser indicada em uma lista supensa pelo próprio usuário.
+<h1>ℹ️ Sobre o Projeto</h1>
 
-As opções são de:
+<ul>
+  <li>Essa aplicação converte o valor informado pelo usuário em três opções de moedas que podem ser indicadas em uma lista suspensa pelo próprio usuário.</li>
+  <li>As opções de conversão incluem:</li>
+  <ul>
+    <li>Real x Dólar</li>
+    <li>Real x Euro</li>
+    <li>Real x BitCoin</li>
+  </ul>
+  <li>🔗 Acesse o Projeto Finalizado: https://joseweverton.github.io/convert-money</li>
+</ul>
 
-* Real x Dólar,
-* Real x Euro,
-* Real x BitCoin.
+<h2>🛠️ Tecnologias Utilizadas</h2>
 
-Acesse o projeto: https://joseweverton.github.io/convert-money/
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript</li>
+</ul>
 
-Para essa aplicação não utilizei framework para o front-end, somente HTML, CSS e JavaScript.
+<h2>🌟Recursos</h2>
+<ul>
+  <li>Utilização de fetch para consumir a API do AwesomeAPI e exibir cotações de moedas em tempo real.</li>
+  <li>Interface interativa que muda a bandeira conforme a moeda selecionada.</li>
+  <li>Tratamento avançado de entrada de dados do usuário para evitar erros de digitação.</li>
+</ul>
 
-Foi utilizado o fetch, função nativa do JavaScript para consumir a API do AwesomeAPI e retornar um objeto json com a cotação (na alta - high) da moeda desejada atualizando dinamicamente a página conforme cotação atual retornada pela API.
+<h2>🚀 Uso</h2>
 
-Conforme seleciona a moeda que deseja converter, ao submeter a conversão a bandeira também se altera. Recursos javaScript.
+<ul>
+  <li>Selecione a moeda desejada para conversão.</li>
+  <li>Insira o valor que deseja converter.</li>
+  <li>Submeta a conversão e observe os resultados.</li>
+</ul>
 
-Incrementei a função de tratamento do valor informado pelo usuário para amenizar erros na digitação inputado pelo mesmo.
-
-A aplicação tem como finalidade aplicar conceitos acadêmico visando a prática em cenários cotidiano do dia a dia.
+![image](https://github.com/joseweverton/convert-money/assets/125286733/8aece269-0855-405a-9b5b-f72bc94fe921)
 
 
