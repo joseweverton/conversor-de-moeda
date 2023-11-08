@@ -10,7 +10,6 @@
     <li>Real x Euro</li>
     <li>Real x BitCoin</li>
   </ul>
-  <li>🔗 Acesse o Projeto Finalizado: https://joseweverton.github.io/convert-money</li>
 </ul>
 
 <h2>🛠️ Tecnologias Utilizadas</h2>
